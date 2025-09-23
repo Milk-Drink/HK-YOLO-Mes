@@ -1,0 +1,4 @@
+train: D:/LaijinYOLO11/ultralytics-main/data/train
+val: D:/LaijinYOLO11/ultralytics-main/data/test
+nc: 4 #标签数量
+names: ['A2066372500','A2066372600','A1746367600','A1746367500']#标签名称
