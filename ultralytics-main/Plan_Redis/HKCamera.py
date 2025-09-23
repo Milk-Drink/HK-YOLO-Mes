@@ -164,23 +164,23 @@ class HKCam(object):
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.release()
  
-if __name__=="__main__":
-    camIP ='192.168.1.64'
-    #camIP ='192.168.3.157'
-    DEV_PORT = 8000
-    username ='admin'
-    password = 'a1234567'
-    HIK= HKCam(camIP,username,password)
-    last_stamp = 0
-    while True:
-        t0 =time.time()
-        n_stamp,img = HIK.read()
-        cv2.imshow("HKSDK",img)
-        last_stamp=n_stamp
-        '''
-        TODO
-        '''
-        kkk = cv2.waitKey(1)
-        if kkk ==ord('q'):
-            break
-    HIK.release()
+# if __name__=="__main__":
+#     camIP ='192.168.1.64'
+#     #camIP ='192.168.3.157'
+#     DEV_PORT = 8000
+#     username ='admin'
+#     password = 'a1234567'
+#     HIK= HKCam(camIP,username,password)
+#     last_stamp = 0
+#     while True:
+#         t0 =time.time()
+#         n_stamp,img = HIK.read()
+#         cv2.imshow("HKSDK",img)
+#         last_stamp=n_stamp
+#         '''
+#         TODO
+#         '''
+#         kkk = cv2.waitKey(1)
+#         if kkk ==ord('q'):
+#             break
+#     HIK.release()
